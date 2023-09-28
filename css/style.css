@@ -6,6 +6,10 @@ div {
     color: red;
 }
 
+.wrapper .element {
+    color: orange;
+}
+
 .big {
     color: black;
 }
