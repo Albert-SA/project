@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
 .container {
     position: relative;
     width: 1140px;
@@ -39,7 +43,7 @@ h1 {
 
 .title {
     color: #F9BF3B;
-    font-family: "Roboto - Black";
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 41px;
     font-weight: 400;
     line-height: 24px;
@@ -128,7 +132,7 @@ h2.title {
     padding: 85px 0 75px 0;
 }
 
-.waiting .waiting_header {
+.waiting .waiting_header, .finish_header {
     color: #252525;
     font-family: Roboto;
     font-size: 30px;
@@ -137,7 +141,11 @@ h2.title {
     text-align: center;
 }
 
-.waiting .waiting_divider {
+.finish_header {
+    color: #ffffff;
+}
+
+.waiting .waiting_divider, .finish_divider {
     width: 217px;
     height: 4px;
     background-color:#F9BF3B;
@@ -206,39 +214,28 @@ h2.title {
     z-index: -1;
 }
 
-.education {
-    min-height: 450px;
-    padding: 102px 0 107px 0;
-}
-
-.education_header {
-    color: #ffffff;
-    font-family: "Roboto - Thin";
-    margin-top: 25px;
-    margin-left: 391px;
-    text-transform: uppercase;
+.finish {
+    min-height: 447px;
+    background: url('../img/bg/second_bg.png') center center/cover no-repeat;
+    padding: 86px 0 79px 0;
 }
 
 .education_text_icon {
     color: #ffffff;
 }
 
-.my-flex-container {
+.finish .my-flex-container {
     display: flex;
+    margin-top: 41px;
     justify-content: space-between;
     align-items: center;
 }
 
-.my-flex-block {
-    flex-wrap:wrap;
-    align-content:center;
+.finish .my-flex-container .my-flex-block {
+    margin-top: 25px;
+    text-align: center;
 }
 
 
 
-.education_img {
-    position: absolute;
-    top: -54px;
-    left: -240px;
-    z-index: -1;
-}
+
