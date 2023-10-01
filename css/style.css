@@ -21,7 +21,7 @@ html {
 
 }
 
-.logo .logo_img {
+.logo .logo_img, .prize .img_prize {
     display: block;
     margin: 0 auto;
 }
@@ -66,7 +66,7 @@ h2.title {
     margin-top: 21px;
 }
 
-.promo .promo_text {
+.promo .promo_text, .prize .prize_text {
     color: #ffffff;
     font-size: 21px;
     font-weight: 300;
@@ -76,7 +76,11 @@ h2.title {
     margin-top: 23px;
     text-align: center;
     padding: 0 13px;
-    
+}
+
+.prize .prize_text {
+    color: black;
+    margin-top: 53px;
 }
 
 .promo .promo_text span {
@@ -85,7 +89,7 @@ h2.title {
     font-weight: 700;
 }
 
-.promo .promo_btn {
+.promo .promo_btn, .prize .prize_btn {
     display: block;
     margin: 0px auto;
     margin-top: 73px;
@@ -104,6 +108,7 @@ h2.title {
     cursor: pointer;
     outline: none;
 }
+
 
 .more {
     margin-top: 73px; 
@@ -236,6 +241,9 @@ h2.title {
     text-align: center;
 }
 
-
+.prize {
+    min-height: 631px;
+    padding: 88px 0 88px 0;
+}
 
 
